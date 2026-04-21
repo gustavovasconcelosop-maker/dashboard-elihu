@@ -84,7 +84,7 @@ function BrokerRow({ broker, index }: { broker: BrokerStats; index: number }) {
   )
 }
 
-const TH = ({ children, center }: { children: React.ReactNode; center?: boolean }) => (
+const TH = ({ children, center }: { children?: React.ReactNode; center?: boolean }) => (
   <th className={`px-4 py-3 text-xs font-manrope font-semibold text-brand-muted uppercase tracking-wider ${center ? 'text-center' : 'text-left'}`}>
     {children}
   </th>
